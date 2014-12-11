@@ -40,7 +40,7 @@ GDBs UI is similar to bash. Users enter certain commands and arguments into the
 prompt. After you start GDB, you can configure how the program will run with these
 commands. To understand how this works, lets look at the following examples.
 
-[Example 1](ex1/ex1.cpp)
+[Example 1](ex1/)
 
 **Example 2**
 
