@@ -54,9 +54,10 @@ bitwise operations while stepping through a program. The flags `S_IRUSR`,
 
 [ex2.cpp](ex2.cpp) has three `if` statements in the `info` function.
 Each one checks for a certain permission, then outputs a single character
-corresponding to that specifc value. GDB allows you to check if your 
+corresponding to that permission. GDB allows you to check if your 
 programs are hitting certain `if` statements.
 * Place a breakpoint at the lines with comments indicating where to place breaks.
+* Run the program on different filenames. Which `if` statments are hit?
 * Which characters are supposed to be printed in these statements?
 
 _Check your work by running `ls -l` on the files you worked with._
