@@ -28,10 +28,10 @@ We can "step" through different parts of the program. Since we know the
 error is occuring in the `my_strcpy` function, we can start there.
 
 * Create a breakpoint where you think you should start looking.
-  *Enter `b` or `break` followed by the line number where you want to place the break.
+  * Enter `b` or `break` followed by the line number where you want to place the break.
   If it was created you should see:
   `breakpoint 1 at 0x4007db: file ex1.cpp, line 19.`
-    *Breakpoints are where the program "pauses". From here you can print different values.
+    * Breakpoints are where the program "pauses". From here you can print different values.
 
 From here, we want to explore what values the variables hold. For this, we use
 the print command. 
