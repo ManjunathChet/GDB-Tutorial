@@ -27,20 +27,23 @@ typing `r` of `run` followed by the arguments you wish to pass in.
 We can "step" through different parts of the program. Since we know the
 error is occuring in the `my_strcpy` function, we can start there.
 
-Create a breakpoint where you think you should start looking.
-Enter `b` or `break` followed by the line number where you want to place the break.
-If it was created you should see:
-`breakpoint 1 at 0x4007db: file ex1.cpp, line 19.`
-Breakpoints are where the program "pauses". From here you can print different values.
+* Create a breakpoint where you think you should start looking.
+  *Enter `b` or `break` followed by the line number where you want to place the break.
+  If it was created you should see:
+  `breakpoint 1 at 0x4007db: file ex1.cpp, line 19.`
+    *Breakpoints are where the program "pauses". From here you can print different values.
 
 From here, we want to explore what values the variables hold. For this, we use
-the print command. To print, type `p` or `print` followed by the variable/data
-structure you wish to observe.
+the print command. 
+
+* To print, type `p` or `print` followed by the variable/data structure you wish to observe.
 
 Depending on where you are in the program, you can "step" through lines of code.
-After entering a breakpoint, you can traverse the code that follows using steps.
+After entering a breakpoint, you can traverse the code that follows using `next`.
 This is especially usefule because the program continues to execute every line you step
-to. To "step" through the program, enter `n` or `next`.
+to. 
+
+* To "step" through the program, enter `n` or `next`.
 
 Here is a sample of how to use the `break`, `next`, and `print` commands.
 
