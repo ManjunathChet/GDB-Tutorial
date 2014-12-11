@@ -31,9 +31,6 @@ Next, you will need to run GDB on the specific program you compiled. In bash,
 type `gdb` followed by the program you wish to debug. 
 For example: `gdb ./a.out`
 
-_Dont worry about passing arguments into your program, this will be covered in 
-later with the run command (`r`)._
-
 **Runtime**
 
 GDBs UI is similar to bash. Users enter certain commands and arguments into the
