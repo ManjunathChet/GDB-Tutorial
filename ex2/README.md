@@ -1,7 +1,7 @@
-##Example 2
+###Example 2
 
-You will use the commands you learned in [Example 1](/../ex1/) to explore
-a struct and test `if` statements.
+**You will use the commands you learned in [Example 1](/../ex1/) to explore
+a struct and test `if` statements.**
 
 [Ex2](ex2.cpp) is a program that outputs specific information of specified
 files. The program uses the `stat` system call to create a struct for
