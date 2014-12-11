@@ -12,13 +12,24 @@ char* my_strcpy(char *dst, const char* src)
     {
         return NULL;
     }
-    
+
+    int target_size;
+
+    for(target_size = 0; src[target_size] != '\0'; target_size++)
+    {}
+
+    char* dstArr = new char[target_size];
+
     size_t i;
     
     for(i = 0; src[i] != '\0'; ++i)
     {
-        dst[i] = src[i];
+        dstArr[i] = src[i];
     }
+
+    dst = dstArr;
+    
+    delete dstArr;
     
     return dst;
 }
