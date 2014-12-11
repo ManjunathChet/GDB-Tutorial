@@ -1,4 +1,6 @@
-**Example 1**
+###Example 1
+
+**These excercises will cover the basic GDB commands.**
 
 [Ex1](ex1.cpp) is a rough implementation of the `strcpy` function. It takes
 two arguments, and the program copies the second argument onto the first.
