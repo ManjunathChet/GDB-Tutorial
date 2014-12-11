@@ -15,13 +15,15 @@ Second: goodbye
 COPY DONE
 
 First: 
-Second: Goodbye
+Second: goodbye
 ```
 
 Clearly, the copy function is flawed. At first, we might want to make print
 statements in the function that output each character. Unfortunately, this
-can result in long outputs. Also, it is tedious to go back and add print
-statements at various locations. This is where GDB is useful.
+can result in long outputs. Also, its tedious to go back and add print
+statements at various locations. In many cases, outputting specific elements
+of certain data structures may result in very long outputs. 
+This is where GDB is useful.
 
 Run GDB on the binary executable you compiled. You can run the program by 
 typing `r` of `run` followed by the arguments you wish to pass in.
@@ -38,11 +40,12 @@ error is occuring in the `my_strcpy` function, we can start there.
 From here, we want to explore what values the variables hold. For this, we use
 the print command. 
 
-* To print, type `p` or `print` followed by the variable/data structure you wish to observe.
+* To print, type `p` or `print` followed by the variable you wish to observe.
+  *`p` is especially useful when working with data structures. Print an array name, what do you see?
 
 Depending on where you are in the program, you can "step" through lines of code.
 After entering a breakpoint, you can traverse the code that follows using `next`.
-This is especially usefule because the program continues to execute every line you step
+This is especially useful because the program continues to execute every line you step
 to. 
 
 * To "step" through the program, enter `n` or `next`.
