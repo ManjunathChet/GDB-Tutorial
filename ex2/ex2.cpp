@@ -31,8 +31,8 @@ int info(const char * dirName)
         perror("stat");
     }
 
-    string firstpart = " | MISSING PERMISSIONS | ";
-   
+    string firstpart = "|??|";
+  
     //Read permission - owner
     if((sb.st_mode & S_IRUSR))
     {
@@ -115,7 +115,8 @@ int main(int argc, char *argv[])
 
     if (dirlist.empty())
     {
-        info(".");
+        cout<<"Please enter file(s)."<<endl;
+        return -1;
     }
 
     return 0;
