@@ -1,8 +1,6 @@
 ===
 
 #Introduction to GDB
-Root Location: https://github.com/ManjunathChet/GDB-Tutorial.git
-
 ---
 
 **Description**
