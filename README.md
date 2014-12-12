@@ -40,3 +40,5 @@ commands. To understand how this works, lets look at the following examples.
 [Example 1](ex1/)
 
 [Example 2](ex2/)
+
+[Example 3](ex3/)
