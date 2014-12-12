@@ -33,7 +33,7 @@ For example: `gdb ./a.out`
 
 **Runtime**
 
-GDBs UI is similar to bash. You enter certain commands and arguments into the
+GDBs UI is similar to bash. You enter commands and arguments into the
 prompt. After you start GDB, you can configure how the program will run with these
 commands. To understand how this works, lets look at the following examples.
 

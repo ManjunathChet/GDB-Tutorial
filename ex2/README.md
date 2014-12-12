@@ -31,12 +31,12 @@ following output:
 
 ```
 $ a.out ex2.cpp README.md 
-|??|------1 cmanj001 classes Thu Dec 11 02:39:47 2014 ex2.cpp
-|??|------1 cmanj001 classes Thu Dec 11 02:26:43 2014 README.md
+|??|-------README.md
+|??|---------ex2.cpp
 ```
 
 The output is similar to the output of the `ls -l`. This program is 
-missing the user permissions that each file has. We will use GDB to 
+missing the user permissions that each file has. You will use GDB to 
 explore the `stat` version of each file.
 
 Run GDB on the binary executable you compiled. You can run the program by 

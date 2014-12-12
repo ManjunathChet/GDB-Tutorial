@@ -51,26 +51,11 @@ int info(const char * dirName)
         //BREAK HERE TO CHECK
     }               
 
-    struct passwd *user = getpwuid(getuid());
-    if (user == NULL)
-    {
-        perror("get user error");
-    }
-
-    struct group *grp = getgrgid(getgid());
-    if (grp == NULL)
-    {
-        perror("getgid error");
-    }
-
-    string time = ctime(&sb.st_mtime);
-    string newtime = time.substr(0,24);
 
     cout<<left<<setw(10)<<setfill('-');
-    cout<<firstpart<<sb.st_nlink<<" ";
-    cout<<setw(8)<<right<<user -> pw_name<<" "
-        <<grp -> gr_name<<" ";
-    cout<<setw(10)<<right<<newtime<<" ";
+    cout<<firstpart;
+    cout<<setw(8)<<right;
+    cout<<setw(10);
     cout<<dirName<<endl;
 
     return 0;
