@@ -20,7 +20,7 @@ Second: goodbye
 
 Clearly, the copy function is flawed. At first, you might want to make print
 statements in the function that output each character. Unfortunately, this
-can result in long outputs. Also, its tedious to go back and add print
+can result in long outputs. Also, it's tedious to go back and add print
 statements at various locations. In many cases, outputting specific elements
 of data structures may result in very long outputs. 
 This is where GDB is useful.
@@ -30,7 +30,7 @@ typing `r` of `run` followed by the arguments you wish to pass in.
 
 ```
 $ wget https://github.com/ManjunathChet/GDB-Tutorial/blob/master/ex1/ex1.cpp
-  # here you will get confirmation from if wget ran as intended
+  # here you will get a confirmation from wget
 $ g++ -g ex1.cpp
 $ gdb a.out 
 
@@ -55,7 +55,7 @@ First:
 Second: goodbye
 ```
 
-You can "step" through different parts of the program. Since we the
+You can move through different parts of the program. Since we the
 error seems to occur in the `my_strcpy` function, you can start there.
 
 * Create a breakpoint where you think you should start looking.
@@ -95,9 +95,9 @@ $2 = 0x7fffffffd1ec "hello"
 $3 = 7
 ```
 
-Depending on where you are in the program, you can "step" through lines of code.
+Depending on where you are in the program, you can move through lines of code.
 After entering a breakpoint, you can traverse the code that follows using `next`.
-This is especially useful because the program continues to execute every line you step
+This is especially useful because the program continues to execute every line you move
 to. 
 
 * To move to the next line, enter `n` or `next`.
